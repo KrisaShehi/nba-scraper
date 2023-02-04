@@ -35,7 +35,7 @@ const getPlayers = async () => {
 
 const allPlayers = async (req, res) => {
   const players = await getPlayers();
-  res.status(200).json({ players });
+  res.status(200).send(players);
 }
 
 module.exports = {
