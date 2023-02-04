@@ -9,9 +9,7 @@ app.get('/', (req, res) => {
   res.send('it works!');
 });
 
-app.get('/api/nba', (req, res) => {
-  res.send('Hello World')
-});
+app.get('/api/nba/players', allPlayers);
 
 app.listen(port, (() => {
   console.log(`Server is listening on port ${port}...`);
